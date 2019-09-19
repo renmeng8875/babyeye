@@ -15,12 +15,8 @@ public class JvmMetricsSchedulerTest {
         init();
 
         int processorType = PropertyValues.METRICS_PROCESS_TYPE_STDOUT;
-        JvmClassMetricsProcessor classProcessor = MetricsProcessorFactory.getClassMetricsProcessor(processorType);
-        JvmGCMetricsProcessor gcProcessor = MetricsProcessorFactory.getGCMetricsProcessor(processorType);
-        JvmMemoryMetricsProcessor memoryProcessor = MetricsProcessorFactory.getMemoryMetricsProcessor(processorType);
         JvmThreadMetricsProcessor threadProcessor = MetricsProcessorFactory.getThreadMetricsProcessor(processorType);
-        JvmBufferPoolMetricsProcessor bufferPoolProcessor = MetricsProcessorFactory.getBufferPoolMetricsProcessor(processorType);
-        Scheduler scheduler = new JvmMetricsScheduler(classProcessor, gcProcessor, memoryProcessor, bufferPoolProcessor, threadProcessor);
+        Scheduler scheduler = new JvmMetricsScheduler( threadProcessor);
         long startMills = System.currentTimeMillis();
         scheduler.run(startMills, startMills + 60 * 1000);
     }
@@ -28,10 +24,6 @@ public class JvmMetricsSchedulerTest {
     private void init() {
         ProfilingConfig config = ProfilingConfig.getInstance();
         config.setMethodMetricsFile("/tmp/metrics.log");
-        config.setClassMetricsFile("/tmp/metrics.log");
-        config.setGcMetricsFile("/tmp/metrics.log");
-        config.setMemoryMetricsFile("/tmp/metrics.log");
-        config.setBufferPoolMetricsFile("/tmp/metrics.log");
         config.setThreadMetricsFile("/tmp/metrics.log");
         config.setLogRollingTimeUnit("DAILY");
     }

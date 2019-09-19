@@ -1,7 +1,5 @@
 package com.babytree.babyeye.base.config;
 
-
-
 import com.babytree.babyeye.base.constant.PropertyValues;
 import com.babytree.babyeye.base.util.MapUtils;
 
@@ -16,14 +14,6 @@ public class ProfilingConfig {
     private int metricsProcessorType;
 
     private String methodMetricsFile;
-
-    private String classMetricsFile;
-
-    private String gcMetricsFile;
-
-    private String memoryMetricsFile;
-
-    private String bufferPoolMetricsFile;
 
     private String threadMetricsFile;
 
@@ -55,10 +45,6 @@ public class ProfilingConfig {
 
     private Map<String, ProfilingParams> profilingParamsMap = MapUtils.createHashMap(100);
 
-
-    /**
-     * singleton pattern
-     */
     public static ProfilingConfig getInstance() {
         return instance;
     }
@@ -87,37 +73,7 @@ public class ProfilingConfig {
         this.methodMetricsFile = methodMetricsFile;
     }
 
-    public String getClassMetricsFile() {
-        return classMetricsFile;
-    }
 
-    public void setClassMetricsFile(String classMetricsFile) {
-        this.classMetricsFile = classMetricsFile;
-    }
-
-    public String getGcMetricsFile() {
-        return gcMetricsFile;
-    }
-
-    public void setGcMetricsFile(String gcMetricsFile) {
-        this.gcMetricsFile = gcMetricsFile;
-    }
-
-    public String getMemoryMetricsFile() {
-        return memoryMetricsFile;
-    }
-
-    public void setMemoryMetricsFile(String memoryMetricsFile) {
-        this.memoryMetricsFile = memoryMetricsFile;
-    }
-
-    public String getBufferPoolMetricsFile() {
-        return bufferPoolMetricsFile;
-    }
-
-    public void setBufferPoolMetricsFile(String bufferPoolMetricsFile) {
-        this.bufferPoolMetricsFile = bufferPoolMetricsFile;
-    }
 
     public String getThreadMetricsFile() {
         return threadMetricsFile;
@@ -254,10 +210,6 @@ public class ProfilingConfig {
                 "appName='" + appName + '\'' +
                 ", metricsProcessorType=" + metricsProcessorType +
                 ", methodMetricsFile='" + methodMetricsFile + '\'' +
-                ", classMetricsFile='" + classMetricsFile + '\'' +
-                ", gcMetricsFile='" + gcMetricsFile + '\'' +
-                ", memoryMetricsFile='" + memoryMetricsFile + '\'' +
-                ", bufferPoolMetricsFile='" + bufferPoolMetricsFile + '\'' +
                 ", threadMetricsFile='" + threadMetricsFile + '\'' +
                 ", recorderMode='" + recorderMode + '\'' +
                 ", backupRecorderCount=" + backupRecorderCount +
