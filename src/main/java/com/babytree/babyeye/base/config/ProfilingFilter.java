@@ -37,8 +37,8 @@ public class ProfilingFilter {
         excludePackage.add("org/");
         excludePackage.add("com/intellij/");
 
-        // 不注入MyPerf4J本身
-        excludePackage.add("cn/myperf4j/");
+        // 不注入babytree本身
+        excludePackage.add("com/babytree/babyeye/");
 
 
         //默认不注入的method
@@ -55,7 +55,7 @@ public class ProfilingFilter {
     }
 
     /**
-     * @param innerClassName : 形如: cn/myperf4j/core/ProfilingFilter
+     * @param innerClassName : 形如: com/babytree/babyeye/ProfilingFilter
      * @return : true->不需要修改字节码  false->需要修改字节码
      */
     public static boolean isNotNeedInject(String innerClassName) {
@@ -84,7 +84,7 @@ public class ProfilingFilter {
     }
 
     /**
-     * @param innerClassName : 形如: cn/myperf4j/core/ProfilingFilter
+     * @param innerClassName
      * @return : true->需要修改字节码  false->不需要修改字节码
      */
     public static boolean isNeedInject(String innerClassName) {

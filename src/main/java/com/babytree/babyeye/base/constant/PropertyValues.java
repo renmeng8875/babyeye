@@ -3,7 +3,7 @@ package com.babytree.babyeye.base.constant;
 
 public interface PropertyValues {
 
-    String DEFAULT_PRO_FILE = "/data/MyPerf4J/MyPerf4J.properties";
+    String DEFAULT_PRO_FILE = "/data/babyeye/babyeye.properties";
 
     String RECORDER_MODE_ACCURATE = "ACCURATE";
 
@@ -25,7 +25,7 @@ public interface PropertyValues {
 
     String LOG_ROLLING_TIME_DAILY = "DAILY";
 
-    String DEFAULT_METRICS_FILE = "/data/logs/MyPerf4J/metrics.log";
+    String DEFAULT_METRICS_FILE = "/data/logs/babyeye/metrics.log";
 
     String NULL_FILE = "NULL";
 

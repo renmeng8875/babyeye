@@ -32,6 +32,7 @@ public class ILoggerTest {
     }
 
     public static void main(String[] args) {
+        ProfilingConfig.getInstance().setLogRollingTimeUnit(PropertyValues.LOG_ROLLING_TIME_MINUTELY);
         for (int i = 0; i < 100; ++i) {
             final String file = "/tmp/testLogger.log";
             new Thread(new Runnable() {

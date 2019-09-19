@@ -146,7 +146,6 @@ public abstract class AutoRollingFileWriter {
         try {
             closed = setCloseFlag;
             if (bufferedWriter != null) {
-//                bufferedWriter.flush();
                 bufferedWriter.close();
             }
         } catch (IOException e) {

@@ -16,7 +16,7 @@ public final class Logger {
 
     private static boolean debugEnable = false;
 
-    private static final String PREFIX = " [MyPerf4J] ";
+    private static final String PREFIX = " [babyeye] ";
 
     private static final String INFO_LEVEL = "INFO ";
 

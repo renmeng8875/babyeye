@@ -1,7 +1,6 @@
 package com.babytree.babyeye.base.metric.processor;
 
 import com.babytree.babyeye.base.constant.PropertyValues;
-import com.babytree.babyeye.base.metric.processor.discard.DiscardJvmThreadMetricsProcessor;
 import com.babytree.babyeye.base.metric.processor.log.*;
 
 public class MetricsProcessorFactory {
@@ -13,7 +12,7 @@ public class MetricsProcessorFactory {
                 return new LoggerJvmThreadMetricsProcessor();
 
             default:
-                return new DiscardJvmThreadMetricsProcessor();
+                return new LoggerJvmThreadMetricsProcessor();
         }
     }
 

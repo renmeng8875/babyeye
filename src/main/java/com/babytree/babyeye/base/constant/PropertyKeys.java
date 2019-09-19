@@ -10,14 +10,6 @@ public interface PropertyKeys {
 
     String METHOD_METRICS_FILE = "MethodMetricsFile";
 
-    String CLASS_METRICS_FILE = "ClassMetricsFile";
-
-    String GC_METRICS_FILE = "GCMetricsFile";
-
-    String MEM_METRICS_FILE = "MemMetricsFile";
-
-    String BUF_POOL_METRICS_FILE = "BufPoolMetricsFile";
-
     String THREAD_METRICS_FILE = "ThreadMetricsFile";
 
     String LOG_ROLLING_TIME_TIME_UNIT = "LogRollingTimeUnit";

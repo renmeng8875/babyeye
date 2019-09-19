@@ -49,9 +49,5 @@ public class MethodMetricsTest {
         System.out.println(methodMetrics.getTP90() == 90000);
         System.out.println(methodMetrics.getTP95() == 95000);
         System.out.println(methodMetrics.getTP99() == 99000);
-        System.out.println(methodMetrics.getTP999() == 99900);
-        System.out.println(methodMetrics.getTP9999() == 99990);
-        System.out.println(methodMetrics.getTP99999() == 99999);
-        System.out.println(methodMetrics.getTP100() == 100000);
     }
 }
