@@ -18,12 +18,7 @@ import java.util.concurrent.TimeUnit;
 public class PreMainTest {
 
     @Test
-    public void test() {
-        test(PropertyValues.METRICS_PROCESS_TYPE_STDOUT);
-//        test(PropertyValues.METRICS_PROCESS_TYPE_INFLUX_DB);
-    }
-
-    private void test(int metricsProcessorType) {
+    public void test(int metricsProcessorType) {
         prepare(metricsProcessorType);
         if (ASMBootstrap.getInstance().initial()) {
             MyClassLoader loader = new MyClassLoader();

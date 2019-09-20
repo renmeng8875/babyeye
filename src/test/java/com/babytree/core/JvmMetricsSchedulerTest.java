@@ -13,9 +13,7 @@ public class JvmMetricsSchedulerTest {
     @Test
     public void test() {
         init();
-
-        int processorType = PropertyValues.METRICS_PROCESS_TYPE_STDOUT;
-        JvmThreadMetricsProcessor threadProcessor = MetricsProcessorFactory.getThreadMetricsProcessor(processorType);
+        JvmThreadMetricsProcessor threadProcessor = MetricsProcessorFactory.getThreadMetricsProcessor();
         Scheduler scheduler = new JvmMetricsScheduler( threadProcessor);
         long startMills = System.currentTimeMillis();
         scheduler.run(startMills, startMills + 60 * 1000);

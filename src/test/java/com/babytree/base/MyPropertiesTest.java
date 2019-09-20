@@ -12,7 +12,6 @@ public class MyPropertiesTest extends BaseTest {
     public void test() {
         Assert.assertEquals(MyProperties.getStr(PropertyKeys.PRO_FILE_NAME), BaseTest.TEMP_FILE);
         Assert.assertEquals(MyProperties.getStr(PropertyKeys.APP_NAME), BaseTest.APP_NAME);
-        Assert.assertEquals(MyProperties.getInt(PropertyKeys.METRICS_PROCESS_TYPE, -1), BaseTest.METRICS_PROCESSOR_TYPE);
         Assert.assertEquals(MyProperties.getStr(PropertyKeys.FILTER_INCLUDE_PACKAGES), BaseTest.INCLUDE_PACKAGES);
         Assert.assertEquals(MyProperties.getInt(PropertyKeys.MILLI_TIME_SLICE, -1), BaseTest.MILLI_TIMES_LICE);
 

@@ -21,13 +21,13 @@ import static com.babytree.babyeye.base.constant.PropertyKeys.*;
 
 public abstract class BaseTest {
 
-    public static final String TEMP_FILE = "/tmp/MyPerf4J.properties";
+    public static final String TEMP_FILE = "/tmp/babyEye.properties";
 
-    public static final String APP_NAME = "MyPerf4JBaseTest";
+    public static final String APP_NAME = "BabyEyeBaseTest";
 
     public static final int METRICS_PROCESSOR_TYPE = 1;
 
-    public static final String INCLUDE_PACKAGES = "MyPerf4J";
+    public static final String INCLUDE_PACKAGES = "babyEye";
 
     public static final int MILLI_TIMES_LICE = 1000;
 

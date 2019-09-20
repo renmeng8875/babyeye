@@ -2,11 +2,9 @@ package com.babytree.babyeye.base.constant;
 
 public interface PropertyKeys {
 
-    String PRO_FILE_NAME = "MyPerf4JPropFile";
+    String PRO_FILE_NAME = "babyEye";
 
     String APP_NAME = "AppName";
-
-    String METRICS_PROCESS_TYPE = "MetricsProcessorType";
 
     String METHOD_METRICS_FILE = "MethodMetricsFile";
 

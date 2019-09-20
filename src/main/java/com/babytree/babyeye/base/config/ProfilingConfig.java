@@ -11,8 +11,6 @@ public class ProfilingConfig {
 
     private String appName;
 
-    private int metricsProcessorType;
-
     private String methodMetricsFile;
 
     private String threadMetricsFile;
@@ -57,13 +55,6 @@ public class ProfilingConfig {
         this.appName = appName;
     }
 
-    public int getMetricsProcessorType() {
-        return metricsProcessorType;
-    }
-
-    public void setMetricsProcessorType(int metricsProcessorType) {
-        this.metricsProcessorType = metricsProcessorType;
-    }
 
     public String getMethodMetricsFile() {
         return methodMetricsFile;
@@ -208,7 +199,6 @@ public class ProfilingConfig {
     public String toString() {
         return "ProfilingConfig{" +
                 "appName='" + appName + '\'' +
-                ", metricsProcessorType=" + metricsProcessorType +
                 ", methodMetricsFile='" + methodMetricsFile + '\'' +
                 ", threadMetricsFile='" + threadMetricsFile + '\'' +
                 ", recorderMode='" + recorderMode + '\'' +

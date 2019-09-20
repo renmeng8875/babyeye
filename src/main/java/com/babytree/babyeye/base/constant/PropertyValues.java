@@ -3,7 +3,7 @@ package com.babytree.babyeye.base.constant;
 
 public interface PropertyValues {
 
-    String DEFAULT_PRO_FILE = "/data/babyeye/babyeye.properties";
+    String DEFAULT_PRO_FILE = "/data/babyEye/babyEye.properties";
 
     String RECORDER_MODE_ACCURATE = "ACCURATE";
 
@@ -13,19 +13,13 @@ public interface PropertyValues {
 
     int MAX_BACKUP_RECORDERS_COUNT = 8;
 
-    int METRICS_PROCESS_TYPE_STDOUT = 0;
-
-    int METRICS_PROCESS_TYPE_LOGGER = 1;
-
-    int METRICS_PROCESS_TYPE_INFLUX_DB = 2;
-
     String LOG_ROLLING_TIME_MINUTELY = "MINUTELY";
 
     String LOG_ROLLING_TIME_HOURLY = "HOURLY";
 
     String LOG_ROLLING_TIME_DAILY = "DAILY";
 
-    String DEFAULT_METRICS_FILE = "/data/logs/babyeye/metrics.log";
+    String DEFAULT_METRICS_FILE = "/data/logs/babyEye/metrics.log";
 
     String NULL_FILE = "NULL";
 
